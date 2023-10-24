@@ -5,7 +5,7 @@ from slack import WebClient
 from slack.errors import SlackApiError
 
 from settings import SLACK_API_TOKEN, SLACK_CHANNEL, ANOMALIES_TOPIC, ANOMALIES_CONSUMER_GROUP
-from streaming.utils import create_consumer
+from utils import create_consumer
 
 client = WebClient(token=SLACK_API_TOKEN)
 

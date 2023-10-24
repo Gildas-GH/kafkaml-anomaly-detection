@@ -6,7 +6,7 @@ from datetime import datetime
 import numpy as np
 
 from settings import TRANSACTIONS_TOPIC, DELAY, OUTLIERS_GENERATION_PROBABILITY
-from streaming.utils import create_producer
+from utils import create_producer
 
 _id = 0
 producer = create_producer()

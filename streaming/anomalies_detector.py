@@ -6,10 +6,10 @@ from multiprocessing import Process
 
 import numpy as np
 
-from streaming.utils import create_producer, create_consumer
+from utils import create_producer, create_consumer
 from settings import TRANSACTIONS_TOPIC, TRANSACTIONS_CONSUMER_GROUP, ANOMALIES_TOPIC, NUM_PARTITIONS
 
-model_path = os.path.abspath('../model/isolation_forest.joblib')
+model_path = os.path.abspath('./model/isolation_forest.joblib')
 
 
 def detect():
